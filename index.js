@@ -25,7 +25,7 @@ const app = express();
 app.use(express.json()); // aqui estou avisando que toda aplicação usa (JSON)
 app.use(cors()); // habilitando o front-end
 
-const port = process.send.PORT || 3001;
+const port = process.env.PORT || 3001;
 
 const users = [];
 
